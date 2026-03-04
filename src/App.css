@@ -1,42 +1,220 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.page {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 16px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 24px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.truck-icon {
+    color: #2196f3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 8px;
 }
 
-.card {
-  padding: 2em;
+.form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 24px;
+    box-shadow: 0px 2px 0px 4px rgba(0, 0, 0, 0.1);
 }
 
-.read-the-docs {
-  color: #888;
+.form-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.cancel-edit-button {
+    padding: 4px;
+}
+
+.cancel-edit-icon {
+    color: #f44336
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.input-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.input {
+    flex-grow: 1;
+    background-color: #f9f9f9;
+    border-width: 1px;
+    border-color: #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+}
+
+.measurement-row {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.measurement-input {
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+}
+
+.measurement-unit {
+    position: absolute;
+    right: 12px;
+    font-size: 14px;
+    color: #999;
+    font-weight: 600;
+}
+
+.input-date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-width: 1px;
+    border-color: #ddd;
+    border-radius: 8px;
+    padding: 12px;
+    gap: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.calendar-icon {
+    color: #2196f3;
+}
+
+.submit-button {
+    display: flex;
+    flex-direction: row;
+    background-color: #2196f3;
+    border-radius: 8px;
+    padding: 16px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+    gap: 8px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.trailer-list-container {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0px 2px 0px 4px rgba(0, 0, 0, 0.1);
+}
+
+.empty-text {
+    text-align: center;
+    color: #999;
+    font-size: 16px;
+    /* marginVertical */
+}
+
+.trailer-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-width: 1px;
+    border-color: #e0e0e0;
+}
+
+.trailer-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.trailer-title-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.trailer-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.action-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.delete-button {
+    padding: 8px;
+    color: #f44336;
+}
+
+.edit-button {
+    padding: 8px;
+    color: #2196f3
+}
+
+.trailer-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.detail-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detail-label {
+    font-size: 14px;
+    color: #666;
+    font-weight: 500;
+}
+
+.detail-value {
+    font-size: 14px;
+    color: #333;
+    font-weight: 600;
 }
