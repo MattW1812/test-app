@@ -151,7 +151,7 @@ export default function App() {
     <>
       <div className="page">
         <div className="header">
-          <img src={trailerIcon} alt="close icon" width={64} height={48} />
+          <img src={trailerIcon} width={64} height={48} />
           <p className="title">Trailer Management</p>
         </div>
 
@@ -164,7 +164,7 @@ export default function App() {
               hidden={!editing}
               className="cancel-edit-button"
             >
-              <img src={closeIcon} alt="React logo" />
+              <img src={closeIcon} />
             </button>
           </div>
 
@@ -223,11 +223,7 @@ export default function App() {
           </div>
 
           <button type="submit" className="submit-button">
-            {editing ? (
-              <img src={placeholderIcon} alt="React logo" />
-            ) : (
-              <img src={createIcon} alt="React logo" />
-            )}
+            {editing ? <img src={placeholderIcon} /> : <img src={createIcon} />}
             {editing ? "Update Trailer" : "Add New Trailer"}
           </button>
         </form>
@@ -241,14 +237,14 @@ export default function App() {
             </div>
           ) : trailers.length === 0 ? (
             <div>
-              <p>No trailers added yet</p>
+              <p className="empty-text">No trailers added yet</p>
             </div>
           ) : (
             trailers.map((trailer) => (
               <div key={trailer.id} className="trailer-card">
                 <div className="trailer-header">
                   <div className="trailer-title-row">
-                    <img src={trailerIcon} alt="React logo" />
+                    <img src={trailerIcon} />
                     <p className="trailer-title">{trailer.id}</p>
                   </div>
                   <div className="action-buttons">
@@ -257,7 +253,7 @@ export default function App() {
                       onClick={() => handleEdit(trailer)}
                       className="edit-button"
                     >
-                      <img src={placeholderIcon} alt="React logo" />
+                      <img src={placeholderIcon} />
                     </button>
 
                     <button
@@ -265,7 +261,7 @@ export default function App() {
                       onClick={() => handleDelete(trailer)}
                       className="delete-button"
                     >
-                      <img src={deleteIcon} alt="React logo" />
+                      <img src={deleteIcon} />
                     </button>
                   </div>
                 </div>
