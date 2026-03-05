@@ -2,7 +2,8 @@ import { useState } from "react";
 import trailerIcon from "./assets/trailer-icon.svg";
 import closeIcon from "./assets/close-icon.svg";
 import createIcon from "./assets/create-icon.svg";
-import placeholderIcon from "./assets/placeholder-icon.svg";
+import checkmarkIcon from "./assets/checkmark-icon.svg";
+import fontAwesomeEditIcon from "./assets/font-awesome-edit-icon.svg";
 import deleteIcon from "./assets/delete-icon.svg";
 import "./App.css";
 
@@ -223,7 +224,7 @@ export default function App() {
           </div>
 
           <button type="submit" className="submit-button">
-            {editing ? <img src={placeholderIcon} /> : <img src={createIcon} />}
+            {editing ? <img src={checkmarkIcon} /> : <img src={createIcon} />}
             {editing ? "Update Trailer" : "Add New Trailer"}
           </button>
         </form>
@@ -253,7 +254,7 @@ export default function App() {
                       onClick={() => handleEdit(trailer)}
                       className="edit-button"
                     >
-                      <img src={placeholderIcon} />
+                      <img src={fontAwesomeEditIcon} width={32} height={32} />
                     </button>
 
                     <button
